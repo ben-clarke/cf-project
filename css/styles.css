@@ -1,0 +1,311 @@
+\:root {
+  font-size: 16px;
+}
+
+body {
+  padding-top: 3.850em;
+  position: relative;
+  background: #eee;
+  margin: 0 auto;
+  color: #34495e;
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.column	{
+  display: inline-block;
+  position: absolute;
+  padding: 0 20px;
+  left: 380px;
+  width: 50%;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+p {
+  text-align: left;
+  font-weight: 400;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.intro p {
+  -webkit-margin-before: 0;
+  font-weight: 400;
+  margin: 1em 2em;
+  font-size: 1.5em;
+}
+
+.skills h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-text h3 {
+  margin: 1.5em 0;
+}
+
+.main-text p {
+  font-size: 1.2em;
+  text-align: left;
+  margin: 0 auto;
+  width: 960px;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-right{
+  margin-right: 0;
+}
+
+/**** HOMEPAGE ****/
+#home #carousel-example-generic {
+  margin-top: -18px;
+}
+
+#home header {
+  padding: 5em;
+}
+
+#home header h2 { text-align: center; }
+
+#home strong { color: #fff; }
+
+.learn-more { text-align: left; float: left; margin-left: 2em; }
+
+.modal-button { float: right; padding: 15px; margin-right: 2em; }
+
+#modalembed { height: 1000px; width: 100%; padding: 10px; }
+
+.btn { margin: 2em 0; }
+
+/**** ABOUT ****/
+.center-block {
+  margin: 1em 0;
+  display: block;
+}
+
+.main-text {
+  position: relative;
+  clear: both;
+}
+
+.skills {
+  background: url("../img/turquoise-polygon.jpg") no-repeat center center fixed;
+  position: relative;
+  padding: 1.5em 0;
+  color: #fff
+}
+
+#skill-list {
+  text-align: center;
+  list-style: none;
+  display: inline;
+  width: inherit;
+}
+
+#
+
+#skill-list a {
+  color: #fff;
+}
+
+/**** WORK ****/
+#work {
+  margin: 0.625em 0;
+  position: relative;
+}
+
+#work .text {;
+  visibility: hidden;
+}
+
+#work img:hover {
+  opacity: 0.20;
+}
+
+#work h3 {
+  margin-top: -4.8em;
+  color:#000;
+}
+
+#work p {
+  margin-top: -1.3em;
+  color: #000
+}
+
+/**** CONTACT ****/
+iframe {
+  margin: -60px 20px;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+  center: {lat: 52.53762, lng: 13.39597}
+}
+
+#contact {
+  background: url("../img/contact-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  margin: 1em 0;
+  height: 48em;
+  width: 100%;
+  top: 0;
+}
+
+#contact .jumbotron {
+  background: transparent;
+  text-align: center;
+  margin-top: -1em;
+  color: #fff;
+}
+
+#contact .jumbotron p {
+  font-size: 1.5rem
+}
+
+#contact p {
+  margin-top: -5px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+#contact p a {
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+#contact p a:hover {
+  text-decoration: none;
+}
+
+form {
+  color: #fff
+}
+
+.form-group {
+  width: 99%;
+}
+
+textarea {
+  min-height: 10em;
+  resize: none;
+}
+
+.form-control {
+  border-bottom: 2px solid #E9E9E9;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+
+input[type="submit"], .button {
+  border: 2px solid #fff;
+  background: transparent;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em 2em;
+  font-size: 1em;
+  color: #fff;
+  outline: none;
+}
+
+.button:hover {
+  border: 2px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
+/**** FAQ PAGE ****/
+#faq {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#faq .panel-heading {
+  background: rgb(115, 172, 89);
+}
+
+.panel-title span {
+  font-size: 0.80em;
+}
+
+.panel-title h4 {
+  display: inline-block;
+}
+
+.panel-body {
+  background: rgb(127, 182, 101);
+}
+
+.panel-body a {
+  color: rgb(173, 122, 190);
+}
+
+/**** FOOTER ****/
+footer {
+  float: left;
+}
+
+footer p {
+  margin-left: 13em;
+  float: left;
+}
+
+footer nav {
+  margin: 1em 11em;
+  float: right;
+}
+
+footer nav li {
+  margin-right: 40px;
+  list-style: none;
+  float: left;
+}
+
+/**** CALCULATOR ****/
+#calculator {
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.11);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.11);
+  box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.11);
+  transform: translate(-50% -50%);
+  position: relative;
+  margin: 10em auto;
+  background: #fff;
+  height: 25em;
+  width: 650px;
+}
+
+#calculator input {
+  margin: 2em auto 0 auto;
+  border-radius: 0;
+  width: 97%;
+}
+
+#calculator .buttons {
+  position: absolute;
+  margin: 2em 15em;
+  width: 100%;
+}
