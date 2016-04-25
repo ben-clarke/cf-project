@@ -207,7 +207,7 @@
     <div class="col-sm-4 col-md-4">
       <div id="map"></div>
     </div>
-    <form class="col-sm-8 col-md-8">
+    <form class="col-sm-6 col-md-6">
       <div class="form-group">
         <label><span class="glyphicon glyphicon-envelope"></span> * Email address</label><br>
         <input type="email" class="form-control" placeholder="Email" required=”required”>
@@ -318,7 +318,16 @@
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/work.js"></script>
     <script src="js/custom.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73tbX6u_U9jtpYAjRI8nZm90VJeP_leE&callback=initMap"
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 52.53762, lng: 13.39597},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyFgrq1Hc9oB6IqCfSHYZl5VT2yruOmdU&callback=initMap"
     async defer></script>
 
   </body>

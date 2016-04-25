@@ -68,23 +68,49 @@ $(document).ready(function() {
     });
   });
 
-  // works
-  for(var i = 0; i < works.length; ++i ) {
-    console.log(works[i]);
-    $("#work").append("\
-    <div class='col-sm-6 col-md-3'>\
-      <img class='img-responsive' src='" + works[i] +"'>\
-    </div>\
-    ");
-  };
+      // Work Section - work.js is good to go console message
+      console.log(works[i]);
+
+      //looping through works array and adding images with borders using modulus operators
+      for(var i = 0; i < works.length; i++ ){
+        $("#work").append("\
+        	<div class='col-sm-6 col-md-3'>\
+        	  <a href='#' class='work-img'>\
+      	      <img class='img-responsive' src='" + works[i].pic + "'>\
+      	      <span class='info'><p class='proj-title'>Title:</p> " + works[i].title + "</span>\
+      	    </a>\
+          </div>\
+        ");
+        $("#work").css("text-align", "center");
+        // var images = $("#work img");
+        // if(i%2 === 0) {
+        // 	$(images[i]).css("border", "2px solid DodgerBlue");
+        // } else {
+        // 	$(images[i]).css("border", "2px solid Salmon");
+        // };
+        $(".work-img").mouseenter(function(){
+        $(".info", this).show();
+      }).mouseleave(function(){
+        $(".info", this).hide();
+      });
+    };
+
+      //mouseenter effect for titles to pop up on hover
+      $(".work-img").mouseenter( function() {
+      	$(".info", this).show();
+      });
+
+      $(".work-img").mouseleave( function() {
+        $(".info", this).hide();
+      });
 
   // Google Map
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 8
-    });
-  }
+  // var map;
+  // function initMap() {
+  //   var map = new google.maps.Map(document.getElementById('map'), mapProp1 {
+  //     center: {lat: -52.4775215, lng: -1.9336709},
+  //     zoom: 8
+  //   });
+  // }
 
 });
